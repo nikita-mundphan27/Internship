@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 //import 'package:flutter/gestures.dart';
-import 'dart:ui';
+//import 'dart:ui';
 //import 'package:google_fonts/google_fonts.dart';
 //import 'package:myapp/utils.dart';
 
@@ -17,7 +17,7 @@ class SplashScreen extends StatelessWidget {
         padding: EdgeInsets.fromLTRB(82 * fem, 370 * fem, 83 * fem, 370 * fem),
         width: double.infinity,
         height: 800 * fem,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment(0, -1),
             end: Alignment(0, 1),
@@ -31,7 +31,7 @@ class SplashScreen extends StatelessWidget {
             width: 195 * fem,
             height: 60 * fem,
             child: Image.asset(
-              'assets/page-1/images/edmeta-logo-white-1.png',
+              'EdMeta logo new.png',
               fit: BoxFit.cover,
             ),
           ),

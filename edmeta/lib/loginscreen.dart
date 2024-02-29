@@ -1,44 +1,45 @@
 import 'package:flutter/material.dart';
-//import 'package:flutter/gestures.dart';
-//import 'dart:ui';
-//import 'package:google_fonts/google_fonts.dart';
-//import 'package:myapp/utils.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-class loginscreen extends StatelessWidget {
+class loginscreen extends StatefulWidget {
+  const loginscreen({super.key});
+  @override
+  State createState() => _loginstate();
+}
+
+class _loginstate extends State {
+  TextEditingController emailcontroller = new TextEditingController();
+  TextEditingController passwordcontroller = new TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
     double fem = MediaQuery.of(context).size.width / baseWidth;
-    double ffem = fem * 0.97;
+    //double ffem = fem * 0.97;
     return Container(
       width: double.infinity,
       child: Container(
-        // loginscreenPxy (3:4)
+        // loginscreenEcF (3:4)
         width: double.infinity,
         height: 800 * fem,
-        decoration: BoxDecoration(
-          color: Color(0xfff5f5f5),
+        decoration: const BoxDecoration(
+          color: Color(0xFF3BC8F7),
         ),
         child: Stack(
           children: [
             Positioned(
-              // ellipse1iEZ (3:15)
+              // ellipse1Ysq (3:15)
               left: 0 * fem,
               top: 0 * fem,
               child: Align(
                 child: SizedBox(
                   width: 536 * fem,
                   height: 522 * fem,
-                  //child: Image.asset(
-                  //'assets/page-1/images/ellipse-1.png',
-                  //width: 536 * fem,
-                  // height: 522 * fem,
-                  // ),
                 ),
               ),
             ),
             Positioned(
-              // rectangle1oWu (3:16)
+              // rectangle1SCX (3:16)
               left: 33 * fem,
               top: 189 * fem,
               child: Align(
@@ -62,22 +63,18 @@ class loginscreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              // edmetalogowhite15DX (3:5)
+              // edmetalogowhite1VwV (3:5)
               left: 115 * fem,
               top: 61 * fem,
               child: Align(
                 child: SizedBox(
                   width: 132 * fem,
                   height: 33 * fem,
-                  child: Image.asset(
-                    'assets/page-1/images/edmeta-logo-white-1-fDP.png',
-                    fit: BoxFit.cover,
-                  ),
                 ),
               ),
             ),
             Positioned(
-              // welcomeNiR (5:18)
+              // welcomeD6o (5:18)
               left: 68 * fem,
               top: 237 * fem,
               child: Align(
@@ -86,11 +83,10 @@ class loginscreen extends StatelessWidget {
                   height: 24 * fem,
                   child: Text(
                     'Welcome!',
-                    style: TextStyle(
-                      fontFamily: 'Inria Sans',
-                      fontSize: 20 * ffem,
+                    style: GoogleFonts.quicksand(
+                      fontSize: 18 * fem,
                       fontWeight: FontWeight.w400,
-                      height: 1.1975 * ffem / fem,
+                      height: 1.1975 * fem / fem,
                       color: Color(0xff000000),
                     ),
                   ),
@@ -98,7 +94,7 @@ class loginscreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              // logintoyouraccountrdb (5:19)
+              // logintoyouraccountGqm (5:19)
               left: 68 * fem,
               top: 273 * fem,
               child: Align(
@@ -107,11 +103,10 @@ class loginscreen extends StatelessWidget {
                   height: 29 * fem,
                   child: Text(
                     'Login to your account',
-                    style: TextStyle(
-                      fontFamily: 'Inria Sans',
-                      fontSize: 24 * ffem,
+                    style: GoogleFonts.quicksand(
+                      fontSize: 20 * fem,
                       fontWeight: FontWeight.w700,
-                      height: 1.1975 * ffem / fem,
+                      height: 1.1975 * fem / fem,
                       color: Color(0xff000000),
                     ),
                   ),
@@ -119,7 +114,7 @@ class loginscreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              // rectangle28r1 (5:20)
+              // rectangle2kF9 (5:20)
               left: 71 * fem,
               top: 358 * fem,
               child: Align(
@@ -137,7 +132,7 @@ class loginscreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              // rectangle3S61 (5:22)
+              // rectangle3pVu (5:22)
               left: 71 * fem,
               top: 428 * fem,
               child: Align(
@@ -155,7 +150,7 @@ class loginscreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              // emailKQh (5:21)
+              // emailunF (5:21)
               left: 87 * fem,
               top: 362 * fem,
               child: Align(
@@ -164,11 +159,10 @@ class loginscreen extends StatelessWidget {
                   height: 18 * fem,
                   child: Text(
                     'Email',
-                    style: TextStyle(
-                      fontFamily: 'Inria Sans',
-                      fontSize: 15 * ffem,
+                    style: GoogleFonts.quicksand(
+                      fontSize: 10 * fem,
                       fontWeight: FontWeight.w400,
-                      height: 1.1975 * ffem / fem,
+                      height: 1.1975 * fem / fem,
                       color: Color(0xffadadad),
                     ),
                   ),
@@ -176,7 +170,7 @@ class loginscreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              // passwordQS9 (5:23)
+              // passwordnb9 (5:23)
               left: 84 * fem,
               top: 432 * fem,
               child: Align(
@@ -185,11 +179,10 @@ class loginscreen extends StatelessWidget {
                   height: 18 * fem,
                   child: Text(
                     'Password',
-                    style: TextStyle(
-                      fontFamily: 'Inria Sans',
-                      fontSize: 15 * ffem,
+                    style: GoogleFonts.quicksand(
+                      fontSize: 10 * fem,
                       fontWeight: FontWeight.w400,
-                      height: 1.1975 * ffem / fem,
+                      height: 1.1975 * fem / fem,
                       color: Color(0xffadadad),
                     ),
                   ),
@@ -197,7 +190,7 @@ class loginscreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              // forgotpasswordJ1j (5:24)
+              // forgotpassword5aF (5:24)
               left: 187 * fem,
               top: 462 * fem,
               child: Align(
@@ -206,11 +199,10 @@ class loginscreen extends StatelessWidget {
                   height: 18 * fem,
                   child: Text(
                     'Forgot Password?',
-                    style: TextStyle(
-                      fontFamily: 'Inria Sans',
-                      fontSize: 15 * ffem,
+                    style: GoogleFonts.quicksand(
+                      fontSize: 10 * fem,
                       fontWeight: FontWeight.w400,
-                      height: 1.1975 * ffem / fem,
+                      height: 1.1975 * fem / fem,
                       color: Color(0xff409c8e),
                     ),
                   ),
@@ -218,7 +210,7 @@ class loginscreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              // rectangle4oDP (5:25)
+              // rectangle4y9q (5:25)
               left: 68 * fem,
               top: 597 * fem,
               child: Align(
@@ -228,34 +220,49 @@ class loginscreen extends StatelessWidget {
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(6 * fem),
-                      color: Color(0xff409c8e),
+                      color: const Color(0xff409c8e),
                     ),
+                    child: ElevatedButton(
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              const Color.fromARGB(0, 23, 3, 75)),
+                        ),
+                        onPressed: () {},
+                        child: const Text(
+                          "LOGIN",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w800,
+                          ),
+                        )),
                   ),
                 ),
               ),
             ),
-            Positioned(
-              // logintVj (6:26)
+            /*Positioned(
+              // loginsW7 (6:26)
               left: 155 * fem,
               top: 602 * fem,
               child: Align(
                 child: SizedBox(
-                  width: 50 * fem,
-                  height: 20 * fem,
-                  child: Text(
-                    'LOGIN',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontFamily: 'Inter',
-                      fontSize: 16 * ffem,
-                      fontWeight: FontWeight.w700,
-                      height: 1.2125 * ffem / fem,
-                      color: Color(0xffffffff),
+                  // width: 50 * fem,
+                  // height: 20 * fem,
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: Text(
+                      'LOGIN',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 12 * fem,
+                        fontWeight: FontWeight.w500,
+                        height: 1.2125 * fem / fem,
+                        //color: Color(0xffffffff),
+                      ),
                     ),
                   ),
                 ),
               ),
-            ),
+            ),*/
           ],
         ),
       ),
